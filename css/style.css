@@ -1,0 +1,537 @@
+/* FONTS */
+@font-face{ 
+	font-family: 'moontime';
+	src: local(MoonTime Regular);
+	src: local(MoonTime Regular) format('embedded-opentype'),
+	     local(MoonTime Regular) format('woff'),
+	     local(MoonTime Regular) format('truetype'),
+	     local(MoonTime Regular) format('svg');
+}
+
+
+@font-face {
+    font-family: 'loveloblack';
+    src: url(../otrosRecursos/Lovelo-Black.eot) format('eot'),
+         url(../otrosRecursos/Lovelo-Black.woff2) format('woff2'),
+         url(../otrosRecursos/Lovelo-Black.woff) format('woff'),
+         url(../otrosRecursos/Lovelo-Black.ttf) format('ttf'),
+         url(../otrosRecursos/Lovelo-Black.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* HEADER */
+.principio {
+background-color:#CCEEF2;
+color:black; 
+align-items: flex-start;
+/* width: auto; */
+}
+
+
+.header__logo {
+height: 8.5rem;
+}
+
+.header__logo:hover{
+transform: scale(.99);
+transition: .1s;
+}    
+
+
+.header__mensaje {
+color:white;
+background-color:#D0EA7E;
+text-align: center;
+font-style: normal;
+font-family: 'quicksand', sans-serif;
+font-weight: 900;
+font-size: 1.25rem;
+margin: auto;
+padding: .4em;
+border: 2px ghostwhite;
+border-style: solid;
+   
+}
+
+/* CARRITO */
+.iconoCarrito{
+text-decoration: none;
+height: 40px;
+width: auto;
+}
+
+.iconoCarrito:hover{
+transform: scale(.95);
+transition: .2s;
+}    
+
+/* BUSCADOR */
+.buscador{
+padding: 6px 60px;   
+border: 1px black solid;
+border-style: solid;
+background-color: white;
+border-radius: 5px;
+line-height: 17px;
+font-size: 15px;
+font-family: quicksand;
+}
+
+/* MENU */
+
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+   
+/* 
+@media screen and (min-width: 576px) and (max-width:768px){
+    /* .body{
+        width: max-content;
+    } */
+/*     .header__logo{
+        height: 120px;
+    }
+    .buscador{
+        width: 100px;
+        line-height: 10px;
+        font-size: 8px;
+        font-family: quicksand;
+
+    }
+    #menu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #CCEEF2;
+
+    }
+    .menu > li{
+        display: none;
+        padding: 0.5em;
+        text-align: center;
+        width: 100%;
+
+    }
+    .menu li a:hover{
+        transition: all .1s;
+        border-bottom: white solid 3px;
+        }
+    
+       
+}  */
+
+.menu > li{
+position: relative;
+display: inline-block;
+text-align: center;
+margin-top: 0px;
+margin: 0px 8px;
+
+}
+
+.menu > li > a{
+display: block;
+font-family: loveloblack;
+color: white;
+text-decoration: none;
+text-align: center;
+}
+
+.menu li a:hover{
+transition: all .1s;
+border-bottom: white solid 3px;
+}
+
+/* SUBMENU */
+.submenu1{
+position: absolute;
+background-color: #CCEEF2;
+width: 120%;
+visibility: hidden;
+opacity: 0;
+transition: opacity 1,5s;
+z-index: 10;
+
+}
+
+.submenu1 li a{
+display: block;
+padding: 5px;
+color: white;
+font-family: loveloblack;
+text-decoration: none;
+}
+
+.menu li:hover .submenu1{
+visibility: visible;
+opacity: 100%;
+}
+
+.submenu2{
+position: absolute;
+background-color: #CCEEF2;
+width: 100%;
+visibility: hidden;
+opacity: 0;
+transition: opacity 1,5s;
+z-index: 10;
+}
+
+.submenu2 li a{
+display: block;
+padding: 5px;
+color: white;
+font-family: loveloblack;
+text-decoration: none;
+}
+
+.menu li:hover .submenu2{
+visibility: visible;
+opacity: 100%;
+}
+
+/* BOTONES */
+.boton-verde{
+ background-color:#F0F8D8 ;
+ color: black;
+ text-align: center;
+ text-decoration: none;
+ padding: 5px;
+ font-style: normal;
+ font-family: 'Quicksand', sans-serif;
+ border: 2px solid white;
+ border-radius: 5px;
+ margin-top: 8px;
+ margin-bottom: 15px;
+ width: auto;
+ margin: 15px auto;
+}
+
+.boton-finalizarCompra{
+position: relative;
+left: 520px;
+bottom: -20px;
+}
+
+.boton-seguirComprando{
+position: relative;
+left: 570px;
+bottom: -20px;
+}
+
+div .botonWsp{
+    height: 60px;
+    width: auto;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+/* PAGINAS Y SECCIONES */
+
+/* CARRITO */
+
+.main__carrito{
+height: 500px;
+}
+
+/* INDEX */
+
+.main{
+    padding-top: 20px;
+    height: 1600px;
+    background-image: linear-gradient( #CCEEF2, white);
+}
+
+/* EMPRENDEDORES */
+.mapaInteractivo{
+display: block;
+height: 180px;
+width: auto;
+margin: auto;
+}
+
+.mapaInteractivo:hover{
+    transform: scale(1.02);
+    transition: .2s;
+    }
+
+.div__mapa{
+margin: 15px auto;
+justify-content: center;
+display:block;
+
+}
+
+.section__mapa{
+    background-color: #CCEEF2;
+}
+
+/* TUTORIALES */
+#tutorial{
+  margin: auto;
+  display: block;
+  background-color: #CCEEF2;
+}
+
+.tutorial__iframe{
+    display: block;
+    margin: 15px auto;
+
+}
+
+.videoI{
+    height: 500px;
+    width: auto;
+    padding: 10px;
+}
+
+.carrusel{
+    width: auto;
+    height: 500px;
+}
+
+/* FOOTER */
+.newsletter_boton{
+    text-align: center;
+    background-color:#F0F8D8 ;
+    font-style: italic;
+    font-family:'WebFont' ; 
+}
+
+footer{
+    background-color:#F6F6F6;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+
+
+/* PREG FRECUENTES */
+.lista-pregFrecuentes{
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-image: none;
+    margin: 20px;
+    font-family: quicksand;
+    font-style: italic;
+    font-size: 17px;
+}
+.li__pregFrecuentes{
+    font-weight: 600;
+}
+
+.main-pregFrecuentes{
+    height: 600px;
+    background-color: #CCEEF2;
+}
+
+
+
+
+/* CUIDADO DE PRODUCTOS */
+.main-cuidadoProductos{
+    height: 400px;
+    background-color: #CCEEF2;
+}
+
+
+
+
+
+/* TIPO DE PIEL Y PELO */
+
+.section-tipo{
+    background-color: #CCEEF2;
+    height: 700px;
+}
+.texto-tipo{
+    width: 400px;
+    margin-bottom: 20px;
+    background-color: #CCEEF2;
+    font-family: quicksand;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: auto;
+    border-bottom: solid #D0EA7E 3px;
+
+}
+
+
+
+
+/* DETALLE PRODUCTOS */
+
+.foto__detalleProducto{
+    height: 150px;
+    width: auto;
+    padding: 10px;
+}
+
+.tablaDetalle{
+    border: 2px #F0F8D8;
+    border-style: solid;
+    background-color: white;
+}
+
+.table{
+    margin: auto;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* FORMS */
+.legend{
+    margin: 20px;
+    font-family: loveloblack;
+    color: #D0EA7E;
+    font-size: 25px;
+    margin: bottom 6px;
+    padding-top: 10px;
+
+}
+
+.form-campos{
+    border-radius: 5px;
+    border-style: solid;
+    border: black;
+    background-color: #F0F8D8;
+    font-family: quicksand;
+    color: black;
+    font-style: normal;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.form-campos:focus{
+    transform: scale(.95);
+    border: #D0EA7E;
+    transition: .2s;
+}
+
+.nombre-campos{
+    color: black;
+    font-family: quicksand;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 15px;
+}
+.form-base{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+    text-align: center;
+    border: #D0EA7E dotted 2px;
+   align-items: center;
+   height: 100px;
+}
+
+.form__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__campoProvincia{
+    margin: 5px;
+    padding: 8px;
+    width: auto;
+    height: 18px;
+}
+
+ .form__3botones{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: center;
+ }
+ 
+.form__boton{
+margin: 10px 15px;
+}
+
+.form__boton:hover{
+    transform: scale(.95);
+    border: #D0EA7E;
+    transition: .2s;
+}
+
+
+/* ELEMENTOS GENERICOS */
+.tituloH1{
+    color: white;
+    border-top: #CCEEF2 solid 5px;
+    font-family: moontime;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tituloH2{
+    color: white;
+    background-color: #CCEEF2;
+    text-align: center;
+    font-family: loveloblack;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 15px;
+    display: block;
+    padding: 8px;
+
+}
+
+.texto{
+    float: left;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 0px;
+
+}
+
+.tituloH4{
+    text-align: center;
+    color: black;
+    font-family:'moontime';
+    font-size: 32px;
+    margin: 2px;
+    padding-top: 5px;
+}
+
+
+.borderBottom{
+    border-bottom: solid 1px white;
+}
+
+.gradiant{
+    background-image: linear-gradient(#CCEEF2, ghostwhite);
+}
+
+.center{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.centerElementos{
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    width: 20px;
+}

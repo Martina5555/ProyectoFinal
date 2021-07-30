@@ -1,0 +1,121 @@
+header {
+  height: 500px;
+  background-color: aquamarine;
+}
+
+header h1 {
+  height: auto;
+}
+
+/* PARA EL PROYECTO CON TUTORIAL */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(6, 1fr);
+  grid-auto-flow: dense;
+  grid-template-areas: "prod1 prod2 prod3 nombre" "kit1 prod4 prod5 prod6"  "prod7 prod8 kit2 prod9" "prod10 prod11 prod12 kit3" "prod13 kit4 prod14 prod15" "prod16 prod17 kit6 prod18";
+  grid-gap: .5rem;
+  height: 7.5rem;
+  background-color: #CCEEF2;
+  justify-content: center;
+  align-content: flex-start;
+  font-style: italic;
+  font-family: quicksand;
+  font-weight: 600;
+  width: auto;
+  justify-items: center;
+  padding: 0 .5rem;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.prod1 {
+  grid-area: prod1;
+}
+
+.prod2 {
+  grid-area: prod2;
+}
+
+.prod3 {
+  grid-area: prod3;
+}
+
+.prod4 {
+  grid-area: prod4;
+}
+
+.prod5 {
+  grid-area: prod5;
+}
+
+.prod6 {
+  grid-area: prod6;
+}
+
+.prod7 {
+  grid-area: prod7;
+}
+
+.prod8 {
+  grid-area: prod8;
+}
+
+.prod9 {
+  grid-area: prod9;
+}
+
+.prod10 {
+  grid-area: prod10;
+}
+
+.prod11 {
+  grid-area: prod11;
+}
+
+.prod12 {
+  grid-area: prod12;
+}
+
+.prod13 {
+  grid-area: prod13;
+}
+
+.prod14 {
+  grid-area: prod14;
+}
+
+.prod15 {
+  grid-area: prod15;
+}
+
+.prod16 {
+  grid-area: prod16;
+}
+
+.prod17 {
+  grid-area: prod17;
+}
+
+.prod18 {
+  grid-area: prod18;
+}
+
+.kit1 {
+  grid-area: kit1;
+}
+
+.kit2 {
+  grid-area: kit2;
+}
+
+.kit3 {
+  grid-area: kit3;
+}
+
+.kit4 {
+  grid-area: kit4;
+}
+/*# sourceMappingURL=sassClase.css.map */

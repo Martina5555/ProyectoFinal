@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gridFlexBox.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="../imagenes/favicon.png" />
+</head>
+
+<!-- BODY -->
+
+<body class="body">
+    
+
+    <!-- HEADER -->
+    <header id="header" class="principio">
+        <div id="div__mensaje">
+            <p class="header__mensaje">Promociones y envios a todo el país</p>
+        </div>
+        <section class="header__elementos">
+
+          <!-- LOGO -->
+          <div id="div__logo">
+            <a href="../index.html">
+            <img class="header__logo" src="../imagenes/logosSinFondo.png" alt="Logo de Mangata cosmética Natural"> </a>
+        </div>
+
+            <!-- BUSCADOR -->
+            <div id="div__buscador">
+                <input class="buscador" type="search" placeholder="Buscar en la tienda" name="id">
+            </div>
+
+            <!-- CARRITO -->
+            <div id="div__carrito">
+
+                <a class="iconoCarrito" href="./subpaginas/carrito.html">
+                    <img class="iconoCarrito" src="../imagenes/carrito.png" alt="Carrito de compras"></a>
+            </div>
+
+            <!-- MENU -->
+            <nav id="navegacion">
+                <ul class="menu">
+                    <li class="nivel1">
+                        <a class="menu__a" href="#">Productos</a>
+                        <ul class="submenu1">
+                            <li class="subMenu1__boton">
+                                <a class="subMenu1__a" href="./productos.html">Ver todos los
+                                    productos</a>
+                            </li>
+                            <li class="subMenu1__boton">
+                                <a class="subMenu1__a" href="./cabello.html">Cabello</a>
+                            </li>
+                            <li class="subMenu1__boton">
+                                <a class="subMenu1__a" href="./rostro.html">Skincare</a>
+                            </li>
+                            <li class="subMenu1__boton">
+                                <a class="subMenu1__a" href="./humectantes.html">Humectantes</a>
+                            </li>
+                            <li class="subMenu1__boton">
+                                <a class="subMenu1__a" href="./aceites.html">Aceites</a>
+                            </li>
+                            <li class="subMenu1__boton">
+                                <a class="subMenu1__a" href="./cuidado-corporal.html">Cuidado
+                                    corporal</a>
+                            </li>
+                            <li class="subMenu1__boton">
+                                <a class="subMenu1__a" href="./promos-y-kits.html">Promos y Kits para
+                                    vos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nivel1"> <a href="#" class="menu__a">importante</a>
+                        <ul class="submenu2">
+                            <li>
+                                <a class="subMenu2__boton" href="./Tipo-piel-cabello.html">Tipos de piel
+                                    y
+                                    cabello</a>
+                            </li>
+                            <li>
+                                <a class="subMenu2__boton" href="./cuidado-corporal.html">Cuidado de los
+                                    productos</a>
+                            </li>
+                            <li class="menu2__boton">
+                                <a class="subMenu2__boton" href="./preguntas.html">Preguntas
+                                    frecuentes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nivel1">
+                        <a class="menu__a" href="./quienes-somos.html">Nuestro propósito</a>
+                    </li>
+                    <li class="nivel1">
+                        <a class="menu__a" href="./quiero-revender.html">Quiero revender</a>
+                    </li>
+                    <li class="nivel1">
+                        <a class="menu__a" href="./contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main class="gradiant">
+        <h1 class="tituloH1">Quiero contactarme!</h1>
+
+        <!-- FORM1 -->
+        <Form class="form-base" action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="legend animate__animated animate__fadeInRight">Llená tus datos y nos pondremos en
+                    contacto!</legend>
+
+                <!-- DATOS PERSONALES -->
+                <section class="form__row">
+                    <section>
+                        <label class="nombre-campos" for="nombre_apellido">Nombre:</label>
+                        <input class="form-campos" type="text" name="nombre_apellido">
+                    </section>
+
+                    <section>
+                        <label class="nombre-campos" for="mail">E-mail:</label>
+                        <input class="form-campos" type="email" name="mail">
+                    </section>
+
+                    <section>
+
+                        <label class="nombre-campos" for="tel">Número de teléfono con característica:</label>
+                        <input class="form-campos" type="number" name="tel">
+                    </section>
+                </section>
+            </fieldset>
+        </Form>
+
+        <!-- FORM2 -->
+        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="legend">Provincia</legend>
+                <select class="nombre-campos buscador form__row" name="Provincia">
+                    <option class="nombre-campos" value="00">Soy de...</option>
+                    <option class="nombre-campos" value="0">BUENOS AIRES</option>
+                    <option class="nombre-campos" value="1">CATAMARCA</option>
+                    <option class="nombre-campos" value="2">CHACO</option>
+                    <option class="nombre-campos" value="3">CHUBUT</option>
+                    <option class="nombre-campos" value="4">CIUDAD AUTONOMA DE Bs As</option>
+                    <option class="nombre-campos" value="5">CORDOBA</option>
+                    <option class="nombre-campos" value="6">CORRIENTES</option>
+                    <option class="nombre-campos" value="7">ENTRE RIOS</option>
+                    <option class="nombre-campos" value="8">FORMOSA</option>
+                    <option class="nombre-campos" value="9">JUJUY</option>
+                    <option class="nombre-campos" value="10">LA PAMPA</option>
+                    <option class="nombre-campos" value="11">LA RIOJA</option>
+                    <option class="nombre-campos" value="12">MENDOZA</option>
+                    <option class="nombre-campos" value="13">MISIONES</option>
+                    <option class="nombre-campos" value="14">NEUQUEN</option>
+                    <option class="nombre-campos" value="15">RIO NEGRO</option>
+                    <option class="nombre-campos" value="16">SALTA</option>
+                    <option class="nombre-campos" value="17">SAN JUAN</option>
+                    <option class="nombre-campos" value="18">SAN LUIS</option>
+                    <option class="nombre-campos" value="19">SANTA CRUZ</option>S
+                    <option class="nombre-campos" value="20">SANTA FE</option>
+                    <option class="nombre-campos" value="21">SANTIAGO DEL ESTERO</option>
+                    <option class="nombre-campos" value="22">TIERRA DEL FUEGO</option>
+                </select>
+            </fieldset>
+        </Form>
+        <!-- TIPO DE COMPRA -->
+        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="legend">Tipo de Compra</legend>
+                <section class="form__row">
+                    <div class="nombre-campos">Minorista
+                        <input class="form-campos radio" type="radio" name="venta" value="Min">
+                    </div>
+                    <div class="nombre-campos">Mayorista
+                        <input class="form-campos radio" type="radio" name="venta" value="May">
+                    </div>
+                </section>
+            </fieldset>
+        </Form>
+
+        <!-- FORM SOS CLIENTE? -->
+        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="legend">Sos cliente?</legend>
+                <section class="form__row">
+                    <div class="nombre-campos">Si</div>
+                    <input class="form-campos radio" type="radio" name="Cliente" value="Cliente">
+                    <div class="nombre-campos">No</div>
+                    <input class="form-campos radio" type="radio" name="Cliente" value="No cliente">
+                </section>
+            </fieldset>
+        </Form>
+
+        <!-- FORM CONSULTA -->
+        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="legend">Quiero consultar sobre...</legend>
+                <section class="form__row">
+                    <div class="nombre-campos">Compras</div>
+                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. compra">
+                    <div class="nombre-campos">Envíos</div>
+                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. envio">
+                    <div class="nombre-campos">Problemas con el pago</div>
+                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. pago">
+                    <div class="nombre-campos">Otros</div>
+                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. otras">
+                </section>
+            </fieldset>
+        </Form>
+
+        <!-- BOTONES -->
+        <div class="form__3botones form__base">
+            <div>
+                <input class="form__boton boton-verde" type="submit" value="Enviar">
+            </div>
+            <div>
+                <input class="form__boton boton-verde" type="reset" value="Limpiar datos">
+            </div>
+            <div>
+                <input class="form__boton boton-verde" type="button" value="Sin acciones">
+            </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <!-- NEWSLETTER -->
+        <h4 class="tituloH4">Suscribite a nuestro Newsletter!</h4>
+        <div class="center borderBottom">
+            <a class="boton-verde" href="./newsletter.html">Suscribirme</a>
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div>
+            <h4 class="tituloH4">Seguinos en nuestras redes sociales!</h4>
+            <div class="botonRedes borderBottom">
+                <a href="https://instagram.com/mangata.cosmeticanatural?utm_medium=copy_link">
+                    <img class="botonIg" src="../imagenes/logoIgSinFondo.png" alt="Instagram"></a>
+
+                <a href="https://m.facebook.com/Mangata-Cosmetica-Natural-104236034894265/">
+                    <img class="botonFb" src="../imagenes/logoFacebookSinFondo.png" alt="Facebook">
+                </a>
+                <div>
+                    <a class="botonWsp" href="https://api.whatsapp.com/send/?phone=543543695392&text&app_absent=0">
+                        <img class="botonWsp" src="../imagenes/logoWspSinFondo.png" alt="Whatsapp"></a>
+                </div>
+            </div>
+
+            <!--IR AL PRINCIPIO -->
+            <div class="center">
+                <a class="boton-verde" href="#header">Ir al principio de la página</a>
+            </div>
+    </footer>
+</body>
+
+</html>
