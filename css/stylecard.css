@@ -1,7 +1,7 @@
 .card-body {
     border: 1px solid #000 ;
     border-radius: 1px;
-    background-color: #13a4a4;
+    background-color: #F0F8D8;
 }
 
 
@@ -20,5 +20,36 @@
 /* CLASES DE RESEÑAS*/
 .card-17 {
     margin-bottom: 10px;
+  
 }
+
+/* ClASE PAG CONSTRUCCION IMG */
+.img__construccion{
+    overflow: hidden;
+}
+
+body, html {
+    height: 100%;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url(../imagenes/Untitled\ \(1\).svg);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .boton__menu{
+    padding: 5px;
+    color: black;
+    font-family: quicksand;
+    text-decoration: none;
+    font-size: 17.5px;
+  }
 

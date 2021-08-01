@@ -7,13 +7,12 @@
     <title>Mangata</title>
     <meta name="description" content="tienda de cosmetica natural, vegana y amigable con el medioambiente. Productos sin sulfatos, parabenos 
     ni siliconas. Ventas por mayor y menor.">
-<meta name="keywords" content="SHAMPOO SOLIDO, ACONDICIONADOR SOLIDO, ECOFRIENDLY, AMIGABLE CON EL AMBIENTE, COSMETICA, VEGANA, 
-CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE ROSAS, ACEITE DE RICINO"
+    <meta name="keywords" content="SHAMPOO SOLIDO, ACONDICIONADOR SOLIDO, ECOFRIENDLY, AMIGABLE CON EL AMBIENTE, COSMETICA, VEGANA, 
+CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE ROSAS, ACEITE DE RICINO">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <!--<link rel="stylesheet" href="./css/sassClase.css">-->
     <link rel="stylesheet" href="./css/stylecard.css">
     <link rel="stylesheet" href="./css/gridFlexBox.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,150 +24,83 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
 
 <!-- BODY -->
 
-<body class="body">
+<body>
 
-    <header>
-        <h1>PROMOCIONES</h1>
+    <header id="header">
+        <p class="header__mensaje">PROMOCIONES UNICAS Y ENVIOS NACIONALES</p>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class=" zIndex navbar navbar-expand-lg navbar-light header__fondo">
+            <div id="div__logo">
+                <img class="header__logo" src="./imagenes/logosSinFondo.png" alt="Logo de Mangata cosmética Natural">
+            </div>
+           
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse zIndex" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item  boton__menu dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Productos
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="zIndex dropdown-menu  boton__menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Todos los
+                                produtos</a>
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Cuidado
+                                capilar</a>
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Skincare</a>
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Cuidado
+                                corporal</a>
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Cuidado
+                                bucal</a>
+                            <a class="dropdown-item boton__menu" href="subpaginas/pagEnConstruccion.html">Kits y
+                                promociones</a>
+                            <a class="dropdown-item boton__menu " href="./subpaginas/pagEnConstruccion.html"></a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown  boton__menu">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Informacion importante
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="zIndex dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item boton__menu" href="./subpaginas/TipoPielCabello.html">Tipos de piel
+                                y cabello</a>
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Conservacion
+                                de los productos</a>
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Quiero
+                                revender</a>
+                            <a class="dropdown-item boton__menu" href="./subpaginas/pagEnConstruccion.html">Preguntas
+                                frecuentes</a>
+                            <a class="dropdown-item boton__menu"
+                                href="./subpaginas/pagEnConstruccion.html">Ubicacion</a>
                         </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item boton__menu">
+                        <a class="nav-link" href="./subpaginas/pagEnConstruccion.html">Sobre nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item  boton__menu">
+                        <a class="nav-link" href="./subpaginas/contacto.html">Contactanos</a>
                     </li>
 
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form class="zIndex form-inline my-2 my-lg-0">
+                    <input class="zIndex form-control mr-sm-2 boton__menu" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="buscador <!--  -->btn btn-outline-success my-2 my-sm-0 boton__menu" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
     </header>
 
-
-    <!-- HEADER 
-    <header id="header" class="principio">
-        <div id="div__mensaje container-fluid">
-            <p class="header__mensaje">Promociones y envios a todo el país</p>
-        </div>
-        <section class="header__elementos">
-
-            <div id="div__logo">
-                <img class="header__logo" src="../imagenes/logosSinFondo.png" alt="Logo de Mangata cosmética Natural">
-            </div>
-
-            <div id="div__buscador">
-                <input class="buscador" type="search" placeholder="Buscar en la tienda" name="id">
-            </div>
-
-            <div id="div__carrito">
-
-                <a class="iconoCarrito" href="./subpaginas/carrito.html">
-                    <img class="iconoCarrito" src="../imagenes/carrito.png" alt="Carrito de compras"></a>
-            </div>
-
-            <nav id="navegacion">
-                <div class="icon"></div>
-                <ul class="menu">
-                    <li class="nivel1">
-                        <a class="menu__a" href="#">Productos</a>
-                        <ul class="submenu1">
-                            <li class="subMenu1__boton">
-                                <a class="subMenu1__a" href="./subpaginas/productos.html">Ver todos los productos</a>
-                            </li>
-                            <li class="subMenu1__boton">
-                                <a class="subMenu1__a" href="./subpaginas/cabello.html">Cabello</a>
-                            </li>
-                            <li class="subMenu1__boton">
-                                <a class="subMenu1__a" href="../subpaginas/rostro.html">Skincare</a>
-                            </li>
-                            <li class="subMenu1__boton">
-                                <a class="subMenu1__a" href="./subpaginas/humectantes.html">Humectantes</a>
-                            </li>
-                            <li class="subMenu1__boton">
-                                <a class="subMenu1__a" href="./subpaginas/aceites.html">Aceites</a>
-                            </li>
-                            <li class="subMenu1__boton">
-                                <a class="subMenu1__a" href="./subpaginas/cuidado-corporal.html">Cuidado corporal</a>
-                            </li>
-                            <li class="subMenu1__boton">
-                                <a class="subMenu1__a" href="./subpaginas/promos-y-kits.html">Promos y Kits para vos</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nivel1"> <a href="#" class="menu__a">importante</a>
-                        <ul class="submenu2">
-                            <li>
-                                <a class="subMenu2__boton" href="./subpaginas/Tipo-piel-cabello.html">Tipos de piel y
-                                    cabello</a>
-                            </li>
-                            <li>
-                                <a class="subMenu2__boton" href="./subpaginas/cuidado-corporal.html">Cuidado de los
-                                    productos</a>
-                            </li>
-                            <li class="menu2__boton">
-                                <a class="subMenu2__boton" href="./subpaginas/preguntas.html">Preguntas frecuentes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nivel1">
-                        <a class="menu__a" href="./subpaginas/quienes-somos.html">Nuestro propósito</a>
-                    </li>
-                    <li class="nivel1">
-                        <a class="menu__a" href="./subpaginas/quiero-revender.html">Quiero revender</a>
-                    </li>
-                    <li class="nivel1">
-                        <a class="menu__a" href="./subpaginas/contacto.html">Contactanos</a>
-                    </li>
-                </ul>
-            </nav>
-
-    </header>-->
-
-    <!-- INTRO -->
+    <!-- CARRUSEL -->
     <main class="intro gradiant container-fluid">
         <div class="row">
             <div class="intro__titulo col-sm-12 col-md-10 col-lg-12">
-                <h1 class="tituloH1">Sumate a los productos naturales y amigables con el planeta!</h1>
+                <h1 class="tituloH1 display-4">Sumate a los productos naturales y amigables con el planeta!</h1>
             </div>
             <section class="intro__elementos gradiant col-sm-12 col-md-10 col-lg-12">
                 <div id="carouselExampleCaptions" class="carousel slide carrusel" data-ride="carousel">
@@ -181,9 +113,8 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
                         <div class="carousel-item active">
                             <img src="./imagenes/shampooE.jpg" class="d-block carrusel" alt="shampoo solido">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="tituloH2">Shampoo solido</h2><span
-                                    class="badge badge-secondary texto">NEW</span>
-                                <p class="texto">Some representative placeholder content for the first slide.</p>
+                                <h2 class="tituloH2">Shampoo solido</h2><span <p class="texto">Volve a enamorarte de tu
+                                    pelo</p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -193,7 +124,7 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
                                 <p class="texto">Regula el sudor sin bloquear los poros y protege del mal olor todo el
                                     dia
                                 </p>
-                                <button type="button" class="btn btn-info texto">Ver mas</button>
+
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -201,8 +132,8 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
                                 alt="agua micelar desmaquillante">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2 class="tituloH2">Agua micelar de rosas</h2>
-                                <p class="texto">Some representative placeholder content for the third slide.</p>
-                                <button type="button" class="btn btn-info texto">Ver mas</button>
+                                <p class="texto">Retira el maquillaje de una pasada</p>
+
                             </div>
                         </div>
                     </div>
@@ -218,58 +149,54 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
             </section>
 
 
-
+            <!-- MAS VENDIDOS -->
             <section class="tanda-2017 row text-center m-auto">
                 <div class="stitulo col-12 text-align-center">
-                    <h2 class="">LOS MAS VENDIDOS</h2>
+                    <h2 class="tituloH2">LOS MAS VENDIDOS</h2>
                 </div>
 
-     
+
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
                     <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt="Yamada Kun y las 7 brujas (Anime) .
                       Portada ,Ryu nervioso . Las brujas felices . " />
                 </div>
 
-  
+
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
-      
-                    <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt=" Schwarzesmarken (Anime ). El escuadron 666 , 
-                      listos para la batalla " />
+
+                    <img src="./imagenes/shampooG.jpg" class="card-img-top" alt="Shampoo solido para pelo graso" />
 
                 </div>
 
-   
+
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
-                    <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt="Rokka : Los héroes de la flor de seis pétalos (Anime).
-                      Imagen de los 6 heores de la flor juntos . " />
+                    <img src="./imagenes/acondicionador.jpg" class="card-img-top" alt="acondicionador solido" />
                 </div>
 
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
-                    <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt="Rokka : Los héroes de la flor de seis pétalos (Anime).
-                        Imagen de los 6 heores de la flor juntos . " />
+                    <img src="./imagenes/desodorante.jpg" class="card-img-top" alt="desodorante natural" />
                 </div>
 
- 
+
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
-                    <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt="" />
+                    <img src="./imagenes/aguaMic.jpg" class="card-img-top" alt="agua micelar de agua de rosas" />
                 </div>
 
-                <!--Schwarzesmarken-->
+
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
-                    <!--Schwarzesmarken-->
-                    <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt=" Schwarzesmarken (Anime ). El escuadron 666 , 
-                        listos para la batalla " />
+
+                    <img src="./imagenes/balsamo.jpg" class="card-img-top" alt="Balsamo labial" />
 
                 </div>
 
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
-                    <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt="Rokka : Los héroes de la flor de seis pétalos (Anime).
-                        Imagen de los 6 heores de la flor juntos . " />
+                    <img src="./imagenes/jabonGrasa.jpg" class="card-img-top"
+                        alt="jabon de glicerina para piel grasa y acne" />
                 </div>
 
                 <div class="card-16 col-sm-12 col-md-12 col-lg-3">
-                    <img src="./imagenes/aguaDeRosas.jpg" class="card-img-top" alt="Rokka : Los héroes de la flor de seis pétalos (Anime).
-                          Imagen de los 6 heores de la flor juntos . " />
+                    <img src="./imagenes/jabonCoco.jpg" class="card-img-top"
+                        alt="Jabon de coco para piel equilibrada y seca" />
 
                 </div>
 
@@ -277,30 +204,27 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
 
             <section class="row text-center m-auto">
                 <div class="stitulo col-12 text-align-center">
-                    <h2 class="">RESEÑAS PARA LOS CLIENTES</h2>
+                    <h2 class="tituloH2">CLIENTES FELICES </h2>
                 </div>
 
                 <div class="card-17 col-sm-12 col-md-12 col-lg-6">
                     <div class="card-body">
-                        <h5 class="card-title-17">Yamada-kun and the Seven Witches</h5>
-                        <p class="card-text-17">
-                            Yamada-kun and the Seven Witches (Yamada-kun y Las Siete Brujas) es
-                            un anime basado en el manga escrito e ilustrado por Miki Yoshikawa.
-                            Un anime de 12 episodios fue producido por Liden Films y dirigido
-                            por Tomoki Takuno tuvo su estreno el 12 de abril de 2015.
+                        <h5 class="tituloH4 card-title-17">Shampoo y jabon de coco</h5>
+                        <p class="card-text-17 texto">
+                            "Todos los productos que usé me encantaron! El jabón lo usamos todos
+                            en casa y el shampoo nos dejó el pelo hermoso!" @cristimendi
                         </p>
-
                     </div>
                 </div>
 
                 <div class="card-17 col-sm-12 col-md-12 col-lg-6">
 
                     <div class="card-body">
-                        <h5 class="card-title-17">Schwarzesmarken</h5>
-                        <p class="card-text-17">
-                            Schwarzesmarken es un anime producido por el estudio ixtl y Liden
-                            Films, dirigido por Tetsuya Watanabe. Está basada en la franquicia
-                            de novelas visuales Muv-Luv.
+                        <h5 class="tituloH4 card-title-17">Balsamo labial</h5>
+                        <p class="card-text-17 texto">
+                            "El bálsamo en un día de uso me quitó la resequedad de los labios
+                            y hasta resalta el color natural de mi boca!"...
+                            @lalydem
                         </p>
 
                     </div>
@@ -308,14 +232,14 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
 
                 <div class="card-17 col-sm-12 col-md-12 col-lg-6">
                     <div class="card-body">
-                        <h5 class="card-title-17">
-                            Rokka: Los héroes de la flor de seis pétalos
+                        <h5 class="tituloH4 card-title-17">
+                            Desodorante natural
                         </h5>
-                        <p class="card-text-17">
-                            Rokka: Los héroes de la flor de seis pétalos es un anime basado en
-                            la serie de novelas ligeras escritas por Ishio Yamagata con
-                            ilustraciones de Miyagi. El 4 de julio de 2015 se estrenó la serie
-                            producida por Takeo Takahashi.
+                        <p class="card-text-17 texto">
+                            "El desodorante es lo mejor que probé en mi vida... nunca
+                            me imaginé que con productos naturales se podrían lograr
+                            resultados así."
+                            @berrettamariajose
                         </p>
 
                     </div>
@@ -323,26 +247,24 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
 
                 <div class="card-17 col-sm-12 col-md-12 col-lg-6">
                     <div class="card-body">
-                        <h5 class="card-title-17">Yamada-kun and the Seven Witches</h5>
-                        <p class="card-text-17">
-                            Yamada-kun and the Seven Witches (Yamada-kun y Las Siete Brujas) es
-                            un anime basado en el manga escrito e ilustrado por Miki Yoshikawa.
-                            Un anime de 12 episodios fue producido por Liden Films y dirigido
-                            por Tomoki Takuno tuvo su estreno el 12 de abril de 2015.
+                        <h5 class="tituloH4 card-title-17">Shampoo y acondicionador</h5>
+                        <p class="card-text-17 texto">
+                            "Soy la reina del brillo y suavidad. Nunca tuve el pelo asi."
+                            @kelebek.cba
                         </p>
 
                     </div>
                 </div>
 
-         
+
                 <div class="card-17 col-sm-12 col-md-12 col-lg-6">
-   
+
                     <div class="card-body">
-                        <h5 class="card-title-17">Schwarzesmarken</h5>
-                        <p class="card-text-17">
-                            Schwarzesmarken es un anime producido por el estudio ixtl y Liden
-                            Films, dirigido por Tetsuya Watanabe. Está basada en la franquicia
-                            de novelas visuales Muv-Luv.
+                        <h5 class="tituloH4 card-title-17">Shampoo</h5>
+                        <p class="card-text-17 texto">
+                            "El shampoo es lo más y hace una espuma INCREÍBLE,
+                            te deja hermoso el pelo..."
+                            @paauli.diaz
                         </p>
 
                     </div>
@@ -350,14 +272,13 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
 
                 <div class="card-17 col-sm-12 col-md-12 col-lg-6">
                     <div class="card-body">
-                        <h5 class="card-title-17">
-                            Rokka: Los héroes de la flor de seis pétalos
+                        <h5 class="tituloH4 card-title-17">
+                            Skincare
                         </h5>
-                        <p class="card-text-17">
-                            Rokka: Los héroes de la flor de seis pétalos es un anime basado en
-                            la serie de novelas ligeras escritas por Ishio Yamagata con
-                            ilustraciones de Miyagi. El 4 de julio de 2015 se estrenó la serie
-                            producida por Takeo Takahashi.
+                        <p class="card-text-17 texto">
+                            "Es increíble cómo me dejo la piel la rutina
+                            de skincare..."
+                            @maga.delolmo
                         </p>
 
                     </div>
@@ -365,25 +286,23 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
 
                 <div class="card-17 col-sm-12 col-md-12 col-lg-6">
                     <div class="card-body">
-                        <h5 class="card-title-17">Yamada-kun and the Seven Witches</h5>
-                        <p class="card-text-17">
-                            Yamada-kun and the Seven Witches (Yamada-kun y Las Siete Brujas) es
-                            un anime basado en el manga escrito e ilustrado por Miki Yoshikawa.
-                            Un anime de 12 episodios fue producido por Liden Films y dirigido
-                            por Tomoki Takuno tuvo su estreno el 12 de abril de 2015.
+                        <h5 class="tituloH4 card-title-17">Jabon de glicerina para piel grasa</h5>
+                        <p class="card-text-17 texto">
+                            Note resultados despues del primer uso, ya no me salen muchos granitos como antes
+                            y la grasa esta mucho mas controlada! -Agustina
                         </p>
 
                     </div>
                 </div>
 
                 <div class="card-17 col-sm-10 col-md-8 col-lg-6">
-     
+
                     <div class="card-body">
-                        <h5 class="card-title-17">Schwarzesmarken</h5>  
-                        <p class="card-text-17">
-                            Schwarzesmarken es un anime producido por el estudio ixtl y Liden
-                            Films, dirigido por Tetsuya Watanabe. Está basada en la franquicia
-                            de novelas visuales Muv-Luv.
+                        <h5 class="tituloH4 card-title-17">Shampoo</h5>
+                        <p class="card-text-17 texto">
+                            "Estoy ree contenta con los resultados... me quedo el pelo súper suavecito, lacio y
+                            brillante! No puedo
+                            creer que algo tan natural funcione tan bien!"
                         </p>
 
                     </div>
@@ -391,29 +310,38 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
 
                 <div class="card-17 col-sm-10 col-md-8 col-lg-6">
                     <div class="card-body">
-                        <h5 class="card-title-17">
-                            Rokka: Los héroes de la flor de seis pétalos
+                        <h5 class="tituloH4 card-title-17">
+                            Mascarilla capilar
                         </h5>
-                        <p class="card-text-17">
-                            Rokka: Los héroes de la flor de seis pétalos es un anime basado en
-                            la serie de novelas ligeras escritas por Ishio Yamagata con
-                            ilustraciones de Miyagi. El 4 de julio de 2015 se estrenó la serie
-                            producida por Takeo Takahashi.
+                        <p class="card-text-17 texto">
+                            "Mi pelo amaneció como virgen después de usar la mascarilla.
+                            No puedo creerlo!!" @sofficha
                         </p>
 
+                    </div>
+
+                </div>
+                <div class="card-17 col-sm-10 col-md-8 col-lg-6">
+                    <div class="card-body">
+                        <h5 class="tituloH4 card-title-17">
+                            Agua micelar
+                        </h5>
+                        <p class="card-text-17 texto">
+                            "Me encanto! Saca todo el maquillaje de una pasada" @natyogas303
+                        </p>
                     </div>
                 </div>
 
             </section>
             <section class="row text-center m-auto">
-                <div class="stitulo col-12 text-align-center">+-
-                    <h2 class="">Tutoriales para resultados increíbles</h2>
+                <div class="stitulo col-12 text-align-center">
+                    <h2 class="tituloH2">Tutoriales y modo de uso para resultados increibles</h2>
                 </div>
                 <div class="card-18 col-sm-12 col-md-12 col-lg-12 text-align-center ">
                     <iframe width="300" height="315" src="https://www.youtube.com/embed/os2InRyaZxI"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
                 </div>
 
@@ -423,15 +351,6 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
         </div>
 
     </main>
-
-
-
-    <!-- simboliza el elemento para mover las reseñas scrollbar-->
-
-    <!-- TUTORIALES -->
-    <h2 class="tituloH2"></h2>
-
-
 
     <!-- EMPRENDEDORES -->
     <section class="section__mapa">
@@ -447,7 +366,7 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
         <!-- NEWSLETTER -->
         <h4 class="tituloH4">Suscribite a nuestro Newsletter!</h4>
         <div class="center borderBottom">
-            <a class="boton-verde" href="./newsletter.html">Suscribirme</a>
+            <a class="boton-verde" href="./subpaginas/newsletter.html">Suscribirme</a>
         </div>
 
         <!-- REDES SOCIALES -->
@@ -462,7 +381,7 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
                 </a>
                 <div>
                     <a class="botonWsp" href="https://api.whatsapp.com/send/?phone=543543695392&text&app_absent=0">
-                        <img class="botonWsp" src="../imagenes/logoWspSinFondo.png" alt="Whatsapp"></a>
+                        <img class="botonWsp" src="./imagenes/logoWspSinFondo.png" alt="Whatsapp"></a>
                 </div>
             </div>
 
@@ -473,10 +392,10 @@ CREMA CORPORAL, SKINCARE, PASTA DE DIENTES SOLIDA, MASCARILLA FACIAL, AGUA DE RO
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
