@@ -9,6 +9,7 @@
     y enterarte de todas las novedades antes que nadie">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/gridFlexBox.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylecard.css">
@@ -25,7 +26,9 @@
 
         <nav class=" zIndex navbar navbar-expand-lg navbar-light header__fondo">
             <div id="div__logo">
+                <a href="../index.html">
                 <img class="header__logo" src="../imagenes/logosSinFondo.png" alt="Logo de Mangata cosmética Natural">
+            </a>
             </div>
            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -92,14 +95,14 @@
 
     <!-- BODY FORMS -->
     <main class="main">
-        <h1 class="display-4 tituloH1 legend"> Quiero recibir noticias y promociones de
+        <h1 class="H1 tituloH1 legend"> Quiero recibir noticias y promociones de
             Mangata</h1>
 
-        <Form class="form-base" action="" method="POST" enctype="multipart/form-data">
+        <Form class="form-base" action="contacto.php" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <legend class="legend animate__animated animate__fadeInRight"">Información personal</legend>
                
-                <section class=" form__row">
+                <section class="form__row">
                     <section>
                         <label class=" nombre-campos" for="nombre_apellido">Nombre:</label>
                         <input class="form-campos" type="text" name="nombre_apellido">
@@ -185,14 +188,14 @@
      <footer>
 
         <!-- NEWSLETTER -->
-        <h4 class="tituloH4">Suscribite a nuestro Newsletter!</h4>
+        <h5 class="tituloH5">Suscribite a nuestro Newsletter!</h5>
         <div class="center borderBottom">
             <a class="boton-verde" href="./newsletter.html">Suscribirme</a>
         </div>
 
         <!-- REDES SOCIALES -->
         <div>
-            <h4 class="tituloH4">Seguinos en nuestras redes sociales!</h4>
+            <h5 class="tituloH5">Seguinos en nuestras redes sociales!</h5>
             <div class="botonRedes borderBottom">
                 <a href="https://instagram.com/mangata.cosmeticanatural?utm_medium=copy_link">
                     <img class="botonIg" src="../imagenes/logoIgSinFondo.png" alt="Instagram"></a>

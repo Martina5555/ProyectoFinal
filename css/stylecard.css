@@ -2,18 +2,22 @@
     border: 1px solid #000 ;
     border-radius: 1px;
     background-color: #F0F8D8;
+    width: 100%;
 }
 
 
 /* CLASES DE IMAGENES*/
 .card-img-top {
-    width: 75%;
+    max-width: 80%;
     height: auto;
 }
 
 /* CLASES DE IMAGENES*/
 .card-16 {
-    margin-bottom: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    max-width: 95%;
+    margin: auto;
 }
 
 
@@ -26,24 +30,33 @@
 /* ClASE PAG CONSTRUCCION IMG */
 .img__construccion{
     overflow: hidden;
+    max-width: 100%;
 }
 
 body, html {
     height: 100%;
+    max-width: 100%;
+
   }
 
   .bg {
-    /* The image used */
     background-image: url(../imagenes/Untitled\ \(1\).svg);
-  
-    /* Full height */
     height: 100%;
-  
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+/*     background-size: cover; */
   }
+   
+.posicion__H1{
+    position: relative;
+    top: 70px;
+    font-size: 25px;
+    border: #CCEEF2 solid 5px;
+    max-width: 80%;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.753);
+}
+
 
   .boton__menu{
     padding: 5px;
@@ -52,4 +65,20 @@ body, html {
     text-decoration: none;
     font-size: 17.5px;
   }
+  .btn-outline-success{
+      border: solid lightgrey 1px;
+  }
+  .navbar-light .navbar-nav .nav-link{
+      color: black;
+      font-weight: 500;
+  }
 
+  .carousel-caption{
+      background-color: #cceef2dc;
+      color: black;
+  }
+
+  .limit{
+      overflow: hidden;
+      max-width: 98%;
+  }
