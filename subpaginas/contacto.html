@@ -20,6 +20,7 @@
 </head>
 
 <!-- BODY -->
+
 <body>
 
     <!-- HEADER -->
@@ -29,10 +30,11 @@
         <nav class=" zIndex navbar navbar-expand-lg navbar-light header__fondo">
             <div id="div__logo">
                 <a href="../index.html">
-                <img class="header__logo" src="../imagenes/logosSinFondo.png" alt="Logo de Mangata cosmética Natural">
-            </a>
+                    <img class="header__logo" src="../imagenes/logosSinFondo.png"
+                        alt="Logo de Mangata cosmética Natural">
+                </a>
             </div>
-           
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -89,7 +91,8 @@
                 <form class="zIndex form-inline my-2 my-lg-0">
                     <input class="zIndex form-control mr-sm-2 boton__menu" type="search" placeholder="Search"
                         aria-label="Search">
-                    <button class="buscador <!--  -->btn btn-outline-success my-2 my-sm-0 boton__menu" type="submit">Buscar</button>
+                    <button class="buscador <!--  -->btn btn-outline-success my-2 my-sm-0 boton__menu"
+                        type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
@@ -97,19 +100,18 @@
 
     <!-- MAIN -->
     <main class="gradiant">
-        <h1 class="tituloH1">Quiero contactarme!</h1>
+        <h1 class="tituloH1">Llena tus datos y nos pondremos en contacto</h1>
 
         <!-- FORM1 -->
-        <Form class="form-base" action="" method="POST" enctype="multipart/form-data">
+        <Form class="form-base" action="contacto.php" method="POST" enctype="multipart/form-data">
             <fieldset>
-                <legend class="legend animate__animated animate__fadeInRight">Llená tus datos y nos pondremos en
-                    contacto!</legend>
+                <legend class="legend animate__animated animate__fadeInRight"> Datos personales</legend>
 
                 <!-- DATOS PERSONALES -->
                 <section class="form__row">
                     <section>
-                        <label class="nombre-campos" for="nombre_apellido">Nombre:</label>
-                        <input class="form-campos" type="text" name="nombre_apellido">
+                        <label class="nombre-campos" for="nombreApellido">Nombre y apellido:</label>
+                        <input class="form-campos" type="text" name="nombreApellido">
                     </section>
 
                     <section>
@@ -123,103 +125,98 @@
                         <input class="form-campos" type="number" name="tel">
                     </section>
                 </section>
-            </fieldset>
-        </Form>
 
-        <!-- FORM2 -->
-        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
-            <fieldset>
-                <legend class="legend">Provincia</legend>
-                <select class="nombre-campos buscador form__row" name="Provincia">
-                    <option class="nombre-campos" value="00">Soy de...</option>
-                    <option class="nombre-campos" value="0">BUENOS AIRES</option>
-                    <option class="nombre-campos" value="1">CATAMARCA</option>
-                    <option class="nombre-campos" value="2">CHACO</option>
-                    <option class="nombre-campos" value="3">CHUBUT</option>
-                    <option class="nombre-campos" value="4">CIUDAD AUTONOMA DE Bs As</option>
-                    <option class="nombre-campos" value="5">CORDOBA</option>
-                    <option class="nombre-campos" value="6">CORRIENTES</option>
-                    <option class="nombre-campos" value="7">ENTRE RIOS</option>
-                    <option class="nombre-campos" value="8">FORMOSA</option>
-                    <option class="nombre-campos" value="9">JUJUY</option>
-                    <option class="nombre-campos" value="10">LA PAMPA</option>
-                    <option class="nombre-campos" value="11">LA RIOJA</option>
-                    <option class="nombre-campos" value="12">MENDOZA</option>
-                    <option class="nombre-campos" value="13">MISIONES</option>
-                    <option class="nombre-campos" value="14">NEUQUEN</option>
-                    <option class="nombre-campos" value="15">RIO NEGRO</option>
-                    <option class="nombre-campos" value="16">SALTA</option>
-                    <option class="nombre-campos" value="17">SAN JUAN</option>
-                    <option class="nombre-campos" value="18">SAN LUIS</option>
-                    <option class="nombre-campos" value="19">SANTA CRUZ</option>S
-                    <option class="nombre-campos" value="20">SANTA FE</option>
-                    <option class="nombre-campos" value="21">SANTIAGO DEL ESTERO</option>
-                    <option class="nombre-campos" value="22">TIERRA DEL FUEGO</option>
-                </select>
-            </fieldset>
-        </Form>
-        <!-- TIPO DE COMPRA -->
-        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
-            <fieldset>
-                <legend class="legend">Tipo de Compra</legend>
-                <section class="form__row">
-                    <div class="nombre-campos">Minorista
-                        <input class="form-campos radio" type="radio" name="venta" value="Min">
+                <!-- PROVINCIA -->
+                <section class="form-base">
+                    <select class="nombre-campos buscador form__row" name="provincia">
+                        <option class="nombre-campos" value="00">Soy de...</option>
+                        <option class="nombre-campos" value="0">BUENOS AIRES</option>
+                        <option class="nombre-campos" value="1">CATAMARCA</option>
+                        <option class="nombre-campos" value="2">CHACO</option>
+                        <option class="nombre-campos" value="3">CHUBUT</option>
+                        <option class="nombre-campos" value="4">CIUDAD AUTONOMA DE Bs As</option>
+                        <option class="nombre-campos" value="5">CORDOBA</option>
+                        <option class="nombre-campos" value="6">CORRIENTES</option>
+                        <option class="nombre-campos" value="7">ENTRE RIOS</option>
+                        <option class="nombre-campos" value="8">FORMOSA</option>
+                        <option class="nombre-campos" value="9">JUJUY</option>
+                        <option class="nombre-campos" value="10">LA PAMPA</option>
+                        <option class="nombre-campos" value="11">LA RIOJA</option>
+                        <option class="nombre-campos" value="12">MENDOZA</option>
+                        <option class="nombre-campos" value="13">MISIONES</option>
+                        <option class="nombre-campos" value="14">NEUQUEN</option>
+                        <option class="nombre-campos" value="15">RIO NEGRO</option>
+                        <option class="nombre-campos" value="16">SALTA</option>
+                        <option class="nombre-campos" value="17">SAN JUAN</option>
+                        <option class="nombre-campos" value="18">SAN LUIS</option>
+                        <option class="nombre-campos" value="19">SANTA CRUZ</option>S
+                        <option class="nombre-campos" value="20">SANTA FE</option>
+                        <option class="nombre-campos" value="21">SANTIAGO DEL ESTERO</option>
+                        <option class="nombre-campos" value="22">TIERRA DEL FUEGO</option>
+                    </select>
+                </section>
+
+                <!-- TIPO DE COMPRA -->
+                <section class="form-base">
+                    <h2 class="legend">Tipo de Compra</h2>
+                   
+                    <section class="form__row">
+                        <div class="nombre-campos">Minorista
+                            <input class="form-campos radio" type="radio" name="venta" value="Min">
+                        </div>
+                        <div class="nombre-campos">Mayorista
+                            <input class="form-campos radio" type="radio" name="venta" value="May">
+                        </div>
+                    </section>
+
+                </section>
+
+                <!-- CLIENTE -->
+                <section class="form-base">
+                    <h2 class="legend">Sos cliente?</h2>
+                    <section class="form__row">
+                        <div class="nombre-campos">Si</div>
+                        <input class="form-campos radio" type="radio" name="cliente" value="Cliente">
+                        <div class="nombre-campos">No</div>
+                        <input class="form-campos radio" type="radio" name="cliente" value="No cliente">
+                    </section>
+                </section>
+
+                <!-- TIPO DE CONSULTA -->
+                <section class="form-base">
+                    <h2 class="legend">Quiero consultar sobre...</h2>
+                    <section class="form__row">
+                        <div class="nombre-campos">Compras</div>
+                        <input class="form-campos radio" type="radio" name="consultaContacto" value="c. compra">
+                        <div class="nombre-campos">Envíos</div>
+                        <input class="form-campos radio" type="radio" name="consultaContacto" value="c. envio">
+                        <div class="nombre-campos">Problemas con el pago</div>
+                        <input class="form-campos radio" type="radio" name="consultaContacto" value="c. pago">
+                        <div class="nombre-campos">Otros</div>
+                        <input class="form-campos radio" type="radio" name="consultaContacto" value="c. otras">
+                    </section>
+                </section>
+
+
+                <!-- BOTONES -->
+                <section class="form__3botones form__base">
+                    <div>
+                        <button class="form__boton boton-verde" type="submit">Enviar</button>
                     </div>
-                    <div class="nombre-campos">Mayorista
-                        <input class="form-campos radio" type="radio" name="venta" value="May">
+                    <div>
+                        <button class="form__boton boton-verde" type="reset">Limpiar datos</button>
+                    </div>
+                    <div>
+                        <button class="form__boton boton-verde" type="button">Sin acciones</button>
                     </div>
                 </section>
-            </fieldset>
-        </Form>
 
-        <!-- FORM SOS CLIENTE? -->
-        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
-            <fieldset>
-                <legend class="legend">Sos cliente?</legend>
-                <section class="form__row">
-                    <div class="nombre-campos">Si</div>
-                    <input class="form-campos radio" type="radio" name="Cliente" value="Cliente">
-                    <div class="nombre-campos">No</div>
-                    <input class="form-campos radio" type="radio" name="Cliente" value="No cliente">
-                </section>
-            </fieldset>
-        </Form>
-
-        <!-- FORM CONSULTA -->
-        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
-            <fieldset>
-                <legend class="legend">Quiero consultar sobre...</legend>
-                <section class="form__row">
-                    <div class="nombre-campos">Compras</div>
-                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. compra">
-                    <div class="nombre-campos">Envíos</div>
-                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. envio">
-                    <div class="nombre-campos">Problemas con el pago</div>
-                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. pago">
-                    <div class="nombre-campos">Otros</div>
-                    <input class="form-campos radio" type="radio" name="consulta contacto" value="c. otras">
-                </section>
-            </fieldset>
-        </Form>
-
-        <!-- BOTONES -->
-        <section class="form__3botones form__base">
-            <div>
-                <input class="form__boton boton-verde" type="submit" value="Enviar">
-            </div>
-            <div>
-                <input class="form__boton boton-verde" type="reset" value="Limpiar datos">
-            </div>
-            <div>
-                <input class="form__boton boton-verde" type="button" value="Sin acciones">
-            </div>
-        </section>
+        </form>
     </main>
 
 
-      <!-- FOOTER -->
-      <footer>
+    <!-- FOOTER -->
+    <footer>
 
         <!-- NEWSLETTER -->
         <h4 class="tituloH4">Suscribite a nuestro Newsletter!</h4>

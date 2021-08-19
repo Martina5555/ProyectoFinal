@@ -286,9 +286,8 @@ max-width: 95%;
     flex-wrap: wrap;
     margin: 7px auto;
     text-align: center;
-    border: #D0EA7E dotted 2px;
-   align-items: center;
-   height: 15rem;
+    border-bottom: #D0EA7E dotted 2px;
+   align-content: center;
    max-width: 95%;
 }
 
@@ -297,15 +296,8 @@ max-width: 95%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     flex-wrap: wrap;
-}
-
-.form__campoProvincia{
-    margin: 5px;
-    padding: 8px;
-    width: auto;
-    height: 18px;
 }
 
  .form__3botones{

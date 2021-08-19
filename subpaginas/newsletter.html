@@ -19,7 +19,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
-<body class="body">
+<body>
 
     <header id="header">
         <p class="header__mensaje">PROMOCIONES UNICAS Y ENVIOS NACIONALES</p>
@@ -27,10 +27,11 @@
         <nav class=" zIndex navbar navbar-expand-lg navbar-light header__fondo">
             <div id="div__logo">
                 <a href="../index.html">
-                <img class="header__logo" src="../imagenes/logosSinFondo.png" alt="Logo de Mangata cosmética Natural">
-            </a>
+                    <img class="header__logo" src="../imagenes/logosSinFondo.png"
+                        alt="Logo de Mangata cosmética Natural">
+                </a>
             </div>
-           
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,7 @@
                             Productos
                         </a>
                         <div class="zIndex dropdown-menu  boton__menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item boton__menu" href="./pagEnConstruccion.html">Todos los
+                            <a class="dropdown-item boton__menu" href="./pagEnConstruccion.html">Todos los
                                 produtos</a>
                             <a class="dropdown-item boton__menu" href="./pagEnConstruccion.html">Cuidado
                                 capilar</a>
@@ -87,105 +88,119 @@
                 <form class="zIndex form-inline my-2 my-lg-0">
                     <input class="zIndex form-control mr-sm-2 boton__menu" type="search" placeholder="Search"
                         aria-label="Search">
-                    <button class="buscador <!--  -->btn btn-outline-success my-2 my-sm-0 boton__menu" type="submit">Buscar</button>
+                    <button class="buscador btn btn-outline-success my-2 my-sm-0 boton__menu"
+                        type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
     </header>
 
     <!-- BODY FORMS -->
-    <main class="main">
-        <h1 class="H1 tituloH1 legend"> Quiero recibir noticias y promociones de
+    <main class="gradiant">
+        <h1 class="tituloH1"> Quiero recibir noticias y promociones de
             Mangata</h1>
 
-        <Form class="form-base" action="contacto.php" method="POST" enctype="multipart/form-data">
+        <!-- FORM -->
+        <Form class="form-base" action="news.php" method="POST" enctype="multipart/form-data">
             <fieldset>
+
+                <!-- INFO PERSONAL -->
                 <legend class="legend animate__animated animate__fadeInRight"">Información personal</legend>
                
-                <section class="form__row">
+                <section class=" form__row">
                     <section>
-                        <label class=" nombre-campos" for="nombre_apellido">Nombre:</label>
-                        <input class="form-campos" type="text" name="nombre_apellido">
+                        <label class="nombre-campos" for="nombreApellido">Nombre y apellido:</label>
+                        <input class="form-campos" type="text" name="nombreApellido">
                     </section>
+
                     <section>
                         <label class="nombre-campos" for="mail">E-mail:</label>
                         <input class="form-campos" type="email" name="mail">
                     </section>
+
                     <section>
                         <label class="nombre-campos" for="tel">Número de teléfono con característica:</label>
                         <input class="form-campos" type="number" name="tel">
                     </section>
-            </fieldset>
-            </section>
-        </Form>
-        <form class="form-base" action="" method="POST" enctype="multipart/form-data">
-            <fieldset>
-                <legend class="legend">Provincia</legend>
-                <select class="nombre-campos buscador form__row" name="Provincia">
-                    <option class="nombre-campos" value="00">Soy de...</option>
-                    <option class="nombre-campos" value="0">BUENOS AIRES</option>
-                    <option class="nombre-campos" value="1">CATAMARCA</option>
-                    <option class="nombre-campos" value="2">CHACO</option>
-                    <option class="nombre-campos" value="3">CHUBUT</option>
-                    <option class="nombre-campos" value="4">CIUDAD AUTONOMA DE Bs As</option>
-                    <option class="nombre-campos" value="5">CORDOBA</option>
-                    <option class="nombre-campos" value="6">CORRIENTES</option>
-                    <option class="nombre-campos" value="7">ENTRE RIOS</option>
-                    <option class="nombre-campos" value="8">FORMOSA</option>
-                    <option class="nombre-campos" value="9">JUJUY</option>
-                    <option class="nombre-campos" value="10">LA PAMPA</option>
-                    <option class="nombre-campos" value="11">LA RIOJA</option>
-                    <option class="nombre-campos" value="12">MENDOZA</option>
-                    <option class="nombre-campos" value="13">MISIONES</option>
-                    <option class="nombre-campos" value="14">NEUQUEN</option>
-                    <option class="nombre-campos" value="15">RIO NEGRO</option>
-                    <option class="nombre-campos" value="16">SALTA</option>
-                    <option class="nombre-campos" value="17">SAN JUAN</option>
-                    <option class="nombre-campos" value="18">SAN LUIS</option>
-                    <option class="nombre-campos" value="19">SANTA CRUZ</option>S
-                    <option class="nombre-campos" value="20">SANTA FE</option>
-                    <option class="nombre-campos" value="21">SANTIAGO DEL ESTERO</option>
-                    <option class="nombre-campos" value="22">TIERRA DEL FUEGO</option>
-                </select>
-            </fieldset>
-        </form>
+                    </section>
 
-        <section class="form-base legend">Ya sos cliente?
-            <section class="form__row">
-                <div class="nombre-campos">Si</div>
-                <input class="form-campos radio" type="radio" name="Cliente" value="Cliente">
-                <div class="nombre-campos">No</div>
-                <input class="form-campos radio" type="radio" name="Cliente" value="No cliente">
-            </section>
-        </section>
+                    <!-- PROVINCIA -->
+                    <section class="form-base">
+                        <select class="nombre-campos buscador form__row" name="provincia">
+                            <option class="nombre-campos" value="00">Soy de...</option>
+                            <option class="nombre-campos" value="0">BUENOS AIRES</option>
+                            <option class="nombre-campos" value="1">CATAMARCA</option>
+                            <option class="nombre-campos" value="2">CHACO</option>
+                            <option class="nombre-campos" value="3">CHUBUT</option>
+                            <option class="nombre-campos" value="4">CIUDAD AUTONOMA DE Bs As</option>
+                            <option class="nombre-campos" value="5">CORDOBA</option>
+                            <option class="nombre-campos" value="6">CORRIENTES</option>
+                            <option class="nombre-campos" value="7">ENTRE RIOS</option>
+                            <option class="nombre-campos" value="8">FORMOSA</option>
+                            <option class="nombre-campos" value="9">JUJUY</option>
+                            <option class="nombre-campos" value="10">LA PAMPA</option>
+                            <option class="nombre-campos" value="11">LA RIOJA</option>
+                            <option class="nombre-campos" value="12">MENDOZA</option>
+                            <option class="nombre-campos" value="13">MISIONES</option>
+                            <option class="nombre-campos" value="14">NEUQUEN</option>
+                            <option class="nombre-campos" value="15">RIO NEGRO</option>
+                            <option class="nombre-campos" value="16">SALTA</option>
+                            <option class="nombre-campos" value="17">SAN JUAN</option>
+                            <option class="nombre-campos" value="18">SAN LUIS</option>
+                            <option class="nombre-campos" value="19">SANTA CRUZ</option>S
+                            <option class="nombre-campos" value="20">SANTA FE</option>
+                            <option class="nombre-campos" value="21">SANTIAGO DEL ESTERO</option>
+                            <option class="nombre-campos" value="22">TIERRA DEL FUEGO</option>
+                        </select>
+                    </section>
 
-        <section class="legend form-base">Quiero recibir Información sobre...
-            <section class="form__row">
-                <div class="nombre-campos">Productos nuevos y novedades</div>
-                <input class="form-campos radio" type="checkbox" name="novedades" value="novedades">
-                <div class="nombre-campos">Promociones y ofertas</div>
-                <input class="form-campos radio" type="checkbox" name="promos" value="promos">
-            </section>
-        </section>
-        <!-- BOTONES -->
-        <section class="form__3botones form__base">
-            <div>
-                <input class="form__boton boton-verde" type="submit" value="Enviar">
-            </div>
-            <div>
-                <input class="form__boton boton-verde" type="reset" value="Limpiar datos">
-            </div>
-            <div>
-                <input class="form__boton boton-verde" type="button" value="Sin acciones">
-            </div>
-        </section>
-        </section>
-        </fieldset>
+
+
+                    <!-- SOS CLIENTE? -->
+                    <section class="form-base">
+                        <h2 class="legend">Ya sos cliente?</h2>
+
+                        <section class="form__row">
+                            <div class="nombre-campos">Si
+                                <input class="form-campos radio" type="radio" name="cliente" value="Cliente">
+                            </div>
+                            <div class="nombre-campos">No
+                                <input class="form-campos radio" type="radio" name="cliente" value="No cliente">
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- INFO SOBRE... -->
+                    <section class="form-base">
+                        <h2 class="legend">Quiero recibir información sobre...</h2>
+                        <section class="form__row">
+                            <div class="nombre-campos">Productos nuevos y novedades</div>
+                            <input class="form-campos radio" type="checkbox" name="novedades" value="novedades">
+                            <div class="nombre-campos">Promociones y ofertas</div>
+                            <input class="form-campos radio" type="checkbox" name="promos" value="promos">
+                        </section>
+                    </section>
+
+
+                    <!-- BOTONES -->
+                    <section class="form__3botones form__base">
+                        <div>
+                            <input class="form__boton boton-verde" type="submit" value="Enviar">
+                        </div>
+                        <div>
+                            <input class="form__boton boton-verde" type="reset" value="Limpiar datos">
+                        </div>
+                        <div>
+                            <input class="form__boton boton-verde" type="button" value="Sin acciones">
+                        </div>
+                    </section>
+
+            </fieldset>
         </Form>
     </main>
 
-     <!-- FOOTER -->
-     <footer>
+    <!-- FOOTER -->
+    <footer>
 
         <!-- NEWSLETTER -->
         <h5 class="tituloH5">Suscribite a nuestro Newsletter!</h5>
