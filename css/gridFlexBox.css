@@ -1,315 +1,3 @@
-/* FlEX HEADER */
-#header{
-    height: 180px;
-    margin-bottom: 10px;
-}
-
-.header__elementos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.intro__elementos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 540px;
-    background-color: #CCEEF2;
-    justify-content: space-around;
- align-items: center;
-}
-
-.intro__titulo{
-    display: block;
-}
-
-.intro__texto{
-    font-family: quicksand;
-   font-size: 16px;
-   line-height: 20px;
-   width: 40%;
-   margin-top: 20px;
-}
-
-
-.intro__imagen{
-    height: 430px;
-    width: auto;
-    border-radius: 5px;
-
-}
-
-
-
-/* FLEXBOX MAS VENDIDOS */
-
-.masVendidos{
-    background-color: #CCEEF2;
-}
-
-.contenedor__imgProductos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 270px;
-    margin: 15px 10px;
-}
-
-@media screen and (min-width: 576px) and (max-width:768px) {
-    .contenedor__imgProductos{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        height: fit-content;
-        margin: 15px 10px;
-    }   
-    .imgProductos{
-        height: 100px;
-        width: auto;
-        border-radius: 5px;
-        align-self: center;
-
-    }
-    .resenas{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 2fr 4fr 3fr;
-        grid-template-areas:
-        "titulo titulo titulo"
-        "resena1 resena2 resena3"
-        "resena4 resena5 resena6"
-        "resena7 resena8 resena9";
-        grid-gap:3px;
-        height: fit-content;
-        background-color: #CCEEF2;
-        justify-content: center;
-        text-align: center;
-        align-content: flex-start;
-        font-style: italic;
-        font-family: quicksand;
-        font-weight: 500;
-        font-variant: italic;
-        font-size: 10px;
-        width:auto;
-        justify-items: center;
-        padding: 0 10px;
-        width: max-content;
-        
-    }
-    
-    .grid__titulo-resenas{
-        grid-area: titulo;
-        align-content: flex-start;
-        justify-content: center;
-    
-    }
-    
-    .itemResena1{
-        grid-area: resena1;
-    
-    }
-    
-    .itemResena2{
-        grid-area: resena2;
-    
-    }
-    
-    .itemResena3{
-        grid-area: resena3;
-    
-    }
-    
-    .itemResena4{
-        grid-area: resena4;
-    
-    }
-    
-    .itemResena5{
-        grid-area: resena5;
-    
-    }
-    
-    .itemResena6{
-        grid-area: resena6;
-    
-    }
-    
-    .itemResena7{
-        grid-area: resena7;
-    
-    }
-    
-    .itemResena8{
-        grid-area: resena8;
-    
-    }
-    
-    .itemResena9{
-        grid-area: resena9;
-    
-    }
-    
-    .itemResena10{
-        grid-area: resena10;
-    
-    }
-    
-    .grid__border{
-    border: solid white 1px;
-    background-color: whitesmoke;
-    }
-    
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax (15rem 1fr));
-        grid-template-rows: repeat(1fr);
-        grid-template-areas:
-        "prod1 prod2 nombre"
-        "kit1 prod3 prod4"
-        "prod5 prod6 prod7"
-        "frase1 kit2 prod8"
-        "prod9 prod10 prod11"
-        "prod12 frase13 kit3"
-        "kit4 prod13 prod14"
-        "prod15 prod16 kit5"
-        ;
-        grid-gap: .5rem;
-        height: 7.5rem;
-        background-color: #CCEEF2;
-        justify-content: center;
-        align-content: flex-start;
-        font-style: italic;
-        font-family: quicksand;
-        font-weight: 600;
-        width:auto;
-        justify-items: center;
-        padding: 0 .5rem;
-        
-    }
-    
-    .nombre{
-        grid-area: nombre;
-    
-    }
-    .prod1{
-        grid-area: prod1;
-        
-    }
-    
-    .prod2{
-        grid-area: prod2;
-    }
-    
-    .prod3{
-        grid-area: prod3;
-    }
-    
-    .prod4{
-        grid-area: prod4;
-    }
-    
-    .prod5{
-        grid-area: prod5;
-    }
-    
-    .prod6{
-        grid-area: prod6;
-    }
-    .prod7{
-        grid-area: prod7;
-    }
-    
-    .prod8{
-        grid-area: prod8;
-    }
-    
-    .prod9{
-        grid-area: prod9;
-    }
-    
-    .prod10{
-        grid-area: prod10;
-    }
-    
-    .prod11{
-        grid-area: prod11;
-    }
-    
-    .prod12{
-        grid-area: prod12;
-    }
-    
-    .prod13{
-        grid-area: prod13;
-    }
-    
-    .prod14{
-        grid-area: prod14;
-    }
-    
-    .prod15{
-        grid-area: prod15;
-    }
-    
-    .prod16{
-        grid-area: prod16;
-    }
-    
-    .kit1{
-        grid-area: kit1;
-    }
-    
-    .kit2{
-        grid-area: kit2;
-    }
-}
-
-.imgProductos{
-    height: 230px;
-    width: auto;
-    border-radius: 5px;
-    align-self: center;
-}
-
-.imgProductos:hover{
-    transform: scale(1.1);
-    transition: .2s;
-}
-
-.boton__verMas{
-    align-self: center;
-    border-radius: 50%;
-    background-color:#F0F8D8 ;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 20px;
-    font-style: normal;
-    font-family: 'Quicksand', sans-serif;
-    border: 2px solid white;
-    border-radius: 50px;
-    justify-self: center;
-    height: 20px;
-    width: 20px;
-
-}
-
-.boton__verMas:hover{
-    transform: scale(1.1);
-    transition: .2s;
-    
-}
-
-
-
 
 /* FLEX FOOTER */
 .botonRedes{
@@ -361,34 +49,74 @@
 .productos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr);
     grid-template-areas:
-    "prod1 prod2 prod3 nombre"
-    "kit1 kit1 prod4 frase1"
+    "prod1 prod2 prod3 prod4"
     "prod5 prod6 prod7 prod8"
-    "frase2 kit2 kit2 prod9"
-    "prod10 prod11 prod12 prod13"
-    "prod14 frase3 kit3 kit3"
-    "kit4 kit4 prod15 prod16"
-    ;
-    grid-gap:5px;
-    height: 240px;
-    background-color: #CCEEF2;
+    "prod9 prod10 prod11 prod12"
+    "prod13 prod14 prod15 prod16";
     justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
     align-content: flex-start;
     font-style: italic;
     font-family: quicksand;
     font-weight: 600;
     width:auto;
     justify-items: center;
-    padding: 0 10px;
+    padding: 10px 10px;
+    max-width: 80%;
+    grid-gap: 4px;
+}
+
+@media (min-width:320px) and (max-width:768px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "prod1 prod2" 
+        "prod3 prod4"
+        "prod5 prod6" 
+        "prod7 prod8"
+        "prod9 prod10" 
+        "prod11 prod12"
+        "prod13 prod14" 
+        "prod15 prod16";
+        justify-content: center;
+        margin: auto;
+        margin-top: 2rem;
+        align-content: flex-start;
+        font-style: italic;
+        font-family: quicksand;
+        font-weight: 600;
+        justify-items: center;
+        max-width: 99%;
+        grid-gap: 4px;
+    }
+        .imgProductos{
+            max-height: 250px; 
+            max-width: 100%;
+            border-radius: 5px;
+            align-self: center;
+            padding: .2rem;
+        }
+    }
+    .imgProductos{
+        height: 230px;
+        width: auto;
+        border-radius: 5px;
+        align-self: center;
+    }
     
-}
+    .imgProductos:hover{
+        transform: scale(1.1);
+        transition: .2s;
+    }
 
-.nombre{
-    grid-area: nombre;
 
-}
+    
+
 .prod1{
     grid-area: prod1;
     
@@ -453,16 +181,12 @@
     grid-area: prod16;
 }
 
-.kit1{
-    grid-area: kit1;
-}
-
-.kit2{
-    grid-area: kit2;
-}
-
-
-.bootstrapResenas{
+.intro__elementos {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    height: 540px;
+    background-color: #CCEEF2;
+    justify-content: space-around;
+    align-items: center;
 }

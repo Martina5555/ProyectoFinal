@@ -1,10 +1,10 @@
+
 .card-body {
     border: 1px solid #000 ;
     border-radius: 1px;
     background-color: #F0F8D8;
     width: 100%;
 }
-
 
 /* CLASES DE IMAGENES*/
 .card-img-top {
@@ -65,13 +65,21 @@ body, html {
     text-decoration: none;
     font-size: 17.5px;
   }
+
   .btn-outline-success{
       border: solid lightgrey 1px;
   }
+  .btn-outline-success:hover {
+    color: black;
+    background-color: #D0EA7E;
+    border-color: #D0EA7E; 
+}
+
   .navbar-light .navbar-nav .nav-link{
       color: black;
       font-weight: 500;
   }
+
 
   .carousel-caption{
       background-color: #cceef2dc;
@@ -82,3 +90,8 @@ body, html {
       overflow: hidden;
       max-width: 98%;
   }
+
+  .bootstrapResenas{
+    display: flex;
+    flex-wrap: wrap;
+}
