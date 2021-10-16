@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito</title>
+  <meta name="description" content="Productos naturales, veganos y amigables con el ambiente para el cuidado corporal, capilar
+        y facial  libre de parabenos, siliconas y sulfatos toxicos." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/gridFlexBox.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/productos.css" />
+  <link rel="stylesheet" href="../css/CARRITO.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/stylecard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="icon" href="../imagenes/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <script src="jqueryProd.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <p class="header__mensaje">PROMOCIONES UNICAS Y ENVIOS NACIONALES</p>
+
+    <nav class="zIndex navbar navbar-expand-lg navbar-light header__fondo">
+      <div id="div__logo">
+        <a href="../index.html">
+          <img class="header__logo" src="../imagenes/logosSinFondo.png" alt="Logo de Mangata cosmética Natural" />
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse zIndex" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <a href="/index.html">
+            <li class="nav-item nav-link mx-2">Home</li>
+          </a>
+          <a href="productos.html">
+            <li class="nav-item nav-link mx-2">Productos</li>
+          </a>
+        </ul>
+        <a href="./carrito.html" class="p-2 mr-5 rounded-circle bg-info">
+          <img class="imgCarrito" src="../imagenes/carrito.png" alt="boton carrito" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="titulo-carrito">
+      <h1>Tu carrito de compras</h1>
+    </div>
+
+    <div class="container-fluid p-5">
+      <table class="table border">
+        <thead>
+          <tr>
+            <th scope="col font-weight-bolder"><span class="font-weight-bold">Producto</span></th>
+            <th scope="col font-weight-bold"><span class="font-weight-bold">Precio unitario</span></th>
+            <th scope="col font-weight-bold"><span class="font-weight-bold">Cantidad</span></th>
+            <th scope="col font-weight-bold"><span class="font-weight-bold">Subtotal</span></th>
+            <th scope="col font-weight-bold"><span class="font-weight-bold">Acciones</span></th>
+          </tr>
+        </thead>
+
+        <tbody id="bodyTabla">
+          <!--Aquí se insertan los elementos del carrito gracias a funcionamientoCarrito.js-->
+        </tbody>
+      </table>
+      <h4 class="total-compra">TOTAL: $</h4>
+    </div>
+
+  </main>
+  <script src="funcionamientoCarrito.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

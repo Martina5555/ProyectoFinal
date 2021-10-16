@@ -71,7 +71,11 @@ max-width: 85%;
 position: relative;
 left: auto;
 }
-
+.imgCarrito{
+    position: relative;
+    right: 2px;
+    height: 30px;
+}
 
 /* SUBMENU */
 .submenu1{
